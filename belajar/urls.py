@@ -30,9 +30,14 @@ from django.conf.urls import url
 """
 from . import views
 
+"""
+    Membuat import views dari app
+"""
+from portal import views as viewsPortal
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     url(r'^about/$',views.about),
+    url(r'^portal/$',viewsPortal.index),
     url(r'^$',views.index),
 ]
