@@ -14,6 +14,14 @@ from django.shortcuts import render
 """
 def index(request):
     context = {
-        'judul':'Portal Berita'
+        'judul' : 'Portal Berita',
+        'nav' : [
+            ['/','Home'],
+            ['/portal','Portal'],
+            ['/about','About'],
+            ['/portal/recent','Recent']
+        ],
+        'subjudul':'Home'
     }
-    return render(request,'index.html',context)
+    content="content/index.html"
+    return render(request,content,context)

@@ -4,12 +4,27 @@ from django.shortcuts import render
 # Create your views here.
 def index(request):
     context = {
-        'judul':'Portal Berita'
+        'judul' : 'Portal Berita',
+        'nav' : [
+            ['/','Home'],
+            ['/portal','Portal'],
+            ['/about','About'],
+            ['/portal/recent','Recent']
+        ]
     }
-    return render(request,"portal.html",context)
+    content="content/portal.html"
+    return render(request,content,context)
 
 def recent(request):
     context = {
-        'judul':'Portal Berita'
+        'judul' : 'Portal Berita',
+        'nav' : [
+            ['/','Home'],
+            ['/portal','Portal'],
+            ['/about','About'],
+            ['/portal/recent','Recent']
+        ],
+        'subjudul': 'Recent Post'
     }
-    return render(request,"recent.html",context)
+    content="content/recent.html"
+    return render(request,content,context)

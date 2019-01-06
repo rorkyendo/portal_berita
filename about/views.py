@@ -6,4 +6,15 @@ from django.shortcuts import render
     Membuat def request ke about tanpa templating
 """
 def about(request):
-    return render(request,"about.html")
+        context = {
+            'judul' : 'Portal Berita',
+            'nav' : [
+                ['/','Home'],
+                ['/portal','Portal'],
+                ['/about','About'],
+                ['/portal/recent','Recent']
+            ],
+            'subjudul':'About Us'
+        }
+        content="content/about.html"
+        return render(request,content,context)
