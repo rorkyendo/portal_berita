@@ -14,9 +14,3 @@ from django.shortcuts import render
 """
 def index(request):
     return render(request,'index.html')
-
-"""
-    Membuat def request ke about tanpa templating
-"""
-def about(request):
-    return HttpResponse("<h1> ini adalah About</h1>")
