@@ -35,9 +35,13 @@ from . import views
 """
 from about import views as viewsAbout
 
+from django.conf import settings
+from django.conf.urls.static import static
+
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     url(r'^about/$',viewsAbout.about),
     url(r'^portal/',include('portal.urls')),
     url(r'^$',views.index),
-]
+] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
