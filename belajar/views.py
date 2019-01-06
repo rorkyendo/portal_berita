@@ -13,4 +13,7 @@ from django.shortcuts import render
     Membuat def request ke index dengan templating
 """
 def index(request):
-    return render(request,'index.html')
+    context = {
+        'judul':'Portal Berita'
+    }
+    return render(request,'index.html',context)
