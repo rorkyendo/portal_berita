@@ -54,6 +54,7 @@ ROOT_URLCONF = 'belajar.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
+        #import folder templates kebawah sini
         'DIRS': ['templates'],
         'APP_DIRS': True,
         'OPTIONS': {
