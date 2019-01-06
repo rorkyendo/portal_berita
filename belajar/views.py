@@ -1,5 +1,5 @@
 """
-    Mengimport HttpResponse
+    Mengimport dan membuat tampilan dengan HttpResponse
 """
 from django.http import HttpResponse
 

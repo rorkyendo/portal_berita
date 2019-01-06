@@ -23,7 +23,7 @@ from django.urls import path
 """
     Membuat import url
 """
-from django.conf.urls import url
+from django.conf.urls import url, include
 
 """
     Membuat import views
@@ -33,12 +33,11 @@ from . import views
 """
     Membuat import views dari app
 """
-from portal import views as viewsPortal
 from about import views as viewsAbout
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     url(r'^about/$',viewsAbout.about),
-    url(r'^portal/$',viewsPortal.index),
+    url(r'^portal/',include('portal.urls')),
     url(r'^$',views.index),
 ]
