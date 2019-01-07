@@ -1,3 +1,4 @@
+from __future__ import unicode_literals
 """
     Mengimport dan membuat tampilan dengan HttpResponse
 """

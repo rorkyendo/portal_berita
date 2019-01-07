@@ -1,11 +1,4 @@
 {% include "header.html" %}
-    <h1>{{subjudul}}</h1>
-    <ul>
-      {# template tags #}
-      {% for link,name in nav%}
-        <li>
-          <a href="{{ link }}">{{name}}</a>
-        </li>
-      {% endfor %}
-    </ul>
+{% include "navbar.html" %}
+{{subjudul}}
 {% include "footer.html"%}

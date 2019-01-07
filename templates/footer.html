@@ -1,2 +1,111 @@
+<!--=== Footer v8 ===-->
+<div class="footer-v8">
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 col-sm-6 column-one md-margin-bottom-50">
+          <a href="index.html"><img class="footer-logo" src="<?=base_url()?>assets/logofix.jpg" style="width:50%" alt=""></a>
+          <p class="margin-bottom-20">Unify is an ultra fully responsive template with modern and smart design.</p>
+          <span>Headquarters:</span>
+          <p>795 Folsom Ave, Suite 600, San Francisco, CA 94107</p>
+          <hr>
+          <span>Phone:</span>
+          <p>(+123) 456 7890</p>
+          <p>(+123) 456 7891</p>
+          <hr>
+          <span>Email Address:</span>
+          <a href="#">support@htmlstream.com</a>
+        </div>
+        <div class="col-md-6 col-sm-6 md-margin-bottom-50">
+          <h2>Latest News</h2>
+          <!-- Latest News -->
+          <div class="latest-news margin-bottom-20">
+            <img src="#" alt="#">
+            <h3><a href="#"></a></h3>
+            <p></p>
+          </div>
+          <hr>
+          <!-- End Latest News -->
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <h2>Newsletter</h2>
+          <p><strong>Subscribe</strong> to our newsletter and stay up to date with the latest news and deals!</p><br>
+
+          <!-- Form Group -->
+          <div class="input-group margin-bottom-50">
+            <input class="form-control" type="email" placeholder="Enter email">
+            <div class="input-group-btn">
+              <button type="button" class="btn-u input-btn">Subscribe</button>
+            </div>
+          </div>
+          <!-- End Form Group -->
+
+          <h2>Social Network</h2>
+          <p><strong>Follow Us</strong> If you want to be kept up to date about what’s going on, minute by minute, then search for Grant and give us a follow!</p><br>
+
+          <!-- Social Icons -->
+          <ul class="social-icon-list margin-bottom-20">
+            <li><a href="#"><i class="rounded-x fa fa-twitter"></i></a></li>
+            <li><a href="#"><i class="rounded-x fa fa-facebook"></i></a></li>
+            <li><a href="#"><i class="rounded-x fa fa-linkedin"></i></a></li>
+            <li><a href="#"><i class="rounded-x fa fa-google-plus"></i></a></li>
+            <li><a href="#"><i class="rounded-x fa fa-dribbble"></i></a></li>
+          </ul>
+          <!-- End Social Icons -->
+        </div>
+      </div><!--/end row-->
+    </div><!--/end container-->
+  </footer>
+  <footer class="copyright">
+      <div class="container">
+        <ul class="list-inline terms-menu">
+          <li>2018 &copy; All Rights Reserved.</li>
+          <!-- <li class="home"><a href="#">Terms of Use</a></li>
+          <li><a href="#">Privacy and Policy</a></li> -->
+        </ul>
+      </div><!--/end container-->
+    </footer>
+  </div>
+<!--=== End Footer v8 ===-->
+
+
+<!-- End Wait Block -->
+<!-- JS Implementing Plugins -->
+{% load static %}
+<script src="{% static "/portal/plugins/back-to-top.js"%}"></script>
+<script src="{% static "/portal/plugins/smoothScroll.js"%}"></script>
+<script src="{% static "/portal/plugins/counter/waypoints.min.js"%}"></script>
+<script src="{% static "/portal/plugins/counter/jquery.counterup.min.js"%}"></script>
+<script src="{% static "/portal/plugins/fancybox/source/jquery.fancybox.pack.js"%}"></script>
+<script src="{% static "/portal/plugins/owl-carousel/owl-carousel/owl.carousel.js"%}"></script>
+<script src="{% static "/portal/plugins/master-slider/masterslider/masterslider.js"%}"></script>
+<script src="{% static "/portal/plugins/master-slider/masterslider/jquery.easing.min.js"%}"></script>
+<script src="{% static "/portal/plugins/modernizr.js"%}"></script>
+<script src="{% static "/portal/plugins/login-signup-modal-window/js/main.js"%}"></script> <!-- Gem jQuery -->
+<!-- JS Customization -->
+<script src="{% static "/portal/js/custom.js"%}"></script>
+<!-- JS Page Level -->
+<script src="{% static "/portal/js/app.js"%}"></script>
+<script src="{% static "/portal/js/plugins/fancy-box.js"%}"></script>
+<script src="{% static "/portal/js/plugins/owl-carousel.js"%}"></script>
+<script src="{% static "/portal/js/plugins/master-slider-showcase1.js"%}"></script>
+<script src="{% static "/portal/js/plugins/style-switcher.js"%}"></script>
+<script>
+	jQuery(document).ready(function() {
+		App.init();
+		App.initCounter();
+		FancyBox.initFancybox();
+		OwlCarousel.initOwlCarousel();
+		OwlCarousel.initOwlCarousel2();
+		StyleSwitcher.initStyleSwitcher();
+		MasterSliderShowcase1.initMasterSliderShowcase1();
+	});
+</script>
+<!--[if lt IE 9]>
+	<script src="assets/plugins/respond.js"></script>
+	<script src="assets/plugins/html5shiv.js"></script>
+	<script src="assets/plugins/placeholder-IE-fixes.js"></script>
+<![endif]-->
 </body>
 </html>
